@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="box">
-        <h1 class="title"> SEARCH YOUR FAVOURITE MOVIES </h1>
+    <!--------------------------------------------comment-->
+    <section id="container">
+        <h1 class="title">SEARCH YOUR FAVOURITE MOVIES</h1>
         <form>
-            <input type="text" id="inp" placeholder="Search Movies">
-            <button>Search</button>
+            <input type="text" id="inp" placeholder="Search here...">
+            <button>Search...</button>
         </form>
-
-        <div id="list">
-
-        </div>
-
+        <div id="list"></div>
     </section>
 
+
     <ul class="color">
-        <li> <a href="#" style = "background: lightgray"> </a> </li>
-        <li> <a href="#" style = "background: black"> </a> </li>
-        <li> <a href="#" style = "background: lightpink"> </a> </li>
-        <li> <a href="#" style = "background: lightblue"> </a> </li>
+        <li class="c1a"><a href="#" style="background:lightgray"></a></li>
+        <li class="c1a"><a href="#" style="background:#f12711"></a></li>
+        <li class="c1a"><a href="#" style="background:lightpink"></a></li>
+        <li class="c1a"><a href="#" style="background:#be2ed6"></a></li>
+        <li class="c1a"><a href="#" style="background:darkgreen"></a></li>
     </ul>
+
 
     <script type="text/javascript">
 
@@ -34,23 +36,29 @@
 
         /--this is the syntax of for each loop--/
         anchor.forEach(function(obj){
+
             console.log(obj);
 
 
+
             obj.addEventListener("click",function(){
-                alert('hi');
 
 
                 var getColor=obj.style.background;
 
-                alert(getColor);
+
 
                 document.body.style.background=getColor;
+                // practice
+                // practice
+
 
             })
         });
 
+
     </script>
+    <!----------------------------------------------practice -->
 
     <script src="assignment.js"></script>
 </body>
